@@ -1,0 +1,21 @@
+name: dynamicprint
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - torchvision
+  - cairo
+  - pycairo
+  - defaults::ffmpeg
+  - torchaudio
+  - pytorch
+  - pango
+  - python=3.8
+  - cudatoolkit=11.3
+  - pip :
+    - manim
+    - manim-physics
+    - ffmpeg-python
+    - hsluv
+    - omegaconf
+    - torchdata

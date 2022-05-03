@@ -1,0 +1,61 @@
+runtime:
+  multiprocessing: False
+  nb_workers: 8
+
+base_scene:
+    value_ranges:
+      scale: [1, 1]
+      angle: [-1.5, 1.5]
+      position: 
+        x: [-2, 2]
+        y: [-2, 2]
+      fill_color: 
+        hue: [0, 360]
+        saturation: [0, 100]
+        lightness: [100, 100]
+      fill_opacity: [1, 1]
+      stroke_color: 
+        hue: [0, 360]
+        saturation: [0, 100]
+        lightness: [10, 100]
+      stroke_opacity: [1, 1]
+      stroke_width: [0, 10]
+      gradient_angle: [-1.5, 1.5]
+    possible_rate_functions:
+      - linear
+    nb_anims: [1,2]
+    anims_with_replacement: false
+    anim_duration: [1,1]
+    animation_overlap: [1, 1]
+    transition_duration: [1, 1]
+
+scenes: []
+
+dataset:
+  sizes: []
+
+# Config to be passed to the manim library
+# The rest of the options available in this config are available at https://docs.manim.community/en/stable/tutorials/configuration.html#a-list-of-all-config-options
+manim:
+  verbosity: "WARNING"
+  progress_bar: none
+  write_to_movie: True
+  pixel_width: 32
+  pixel_height: 32
+  frame_height: 8
+  frame_width: 8
+  frame_rate: 10
+  media_dir: "data"
+  video_dir: "{media_dir}"
+  images_dir: "{media_dir}"
+  text_dir: "{media_dir}/.tmp"
+  log_dir: "{media_dir}/.tmp"
+  partial_movie_dir: "{media_dir}/.tmp"
+  output_file: "frame_"
+  format: "png"
+  renderer: "cairo"
+  save_pngs: True
+  save_sections: False
+  background_color: "#000000"
+  disable_cache: True
+  flush_cache: True

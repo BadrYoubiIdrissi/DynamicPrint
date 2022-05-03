@@ -1,0 +1,7 @@
+media
+*.pyc
+data
+.vscode
+output
+export
+debug

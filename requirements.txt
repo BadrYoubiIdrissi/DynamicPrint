@@ -1,0 +1,6 @@
+manim
+manim-physics
+ffmpeg-python
+hsluv
+omegaconf
+torchdata
